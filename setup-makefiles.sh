@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=sweet2
+export DEVICE=sweet_k6a
 export DEVICE_COMMON=sm6150-common
 export VENDOR=xiaomi
 

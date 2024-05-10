@@ -7,10 +7,10 @@
 # Inherit from sm6150-common
 include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/sweet2
+DEVICE_PATH := device/xiaomi/sweet_k6a
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := sweet2
+TARGET_OTA_ASSERT_DEVICE := sweet_k6a
 
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
@@ -19,11 +19,11 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sweet2
-TARGET_RECOVERY_DEVICE_MODULES := libinit_sweet2
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sweet_k6a
+TARGET_RECOVERY_DEVICE_MODULES := libinit_sweet_k6a
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/sweet2.config
+TARGET_KERNEL_CONFIG += vendor/sweet_k6a.config
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
@@ -49,4 +49,4 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 VENDOR_SECURITY_PATCH := 2024-03-01
 
 # Inherit from proprietary files
-include vendor/xiaomi/sweet2/BoardConfigVendor.mk
+include vendor/xiaomi/sweet_k6a/BoardConfigVendor.mk

@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),sweet2)
+ifeq ($(TARGET_DEVICE),sweet_k6a)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

@@ -15,12 +15,12 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_BRAND := Redmi
-PRODUCT_DEVICE := sweet2
+PRODUCT_DEVICE := sweet_k6a
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2209116AG
-PRODUCT_NAME := lineage_sweet2
+PRODUCT_NAME := lineage_sweet_k6a
 PRODUCT_SYSTEM_DEVICE := sweet
-PRODUCT_SYSTEM_NAME := sweet_global2
+PRODUCT_SYSTEM_NAME := sweet_k6a
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
