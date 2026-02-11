@@ -14,6 +14,18 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Lunaris Flag
+WITH_GMS := true
+WITH_BCR := true
+HBM_SUPPORTED := true
+LUNARIS_BUILD_TYPE := OFFICIAL
+BYPASS_CHARGE_SUPPORTED := true
+TARGET_OPTIMIZED_DEXOPT := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
+HBM_NODE := /sys/class/backlight/panel0-backlight/hbm_mode
+
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := sweet2
 PRODUCT_MANUFACTURER := Xiaomi
