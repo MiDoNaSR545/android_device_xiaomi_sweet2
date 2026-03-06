@@ -15,7 +15,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Lunaris Flag
-WITH_GMS := true
+WITH_GMS := false
 WITH_BCR := true
 HBM_SUPPORTED := true
 LUNARIS_BUILD_TYPE := OFFICIAL
